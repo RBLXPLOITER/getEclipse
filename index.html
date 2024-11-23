@@ -3,42 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Eclipse Inject</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
-            background-color: #000000;
             padding: 0;
-        }
-        header {
-            background: #333;
+            background-image: url("delta'sNight.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
             color: white;
-            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
         }
-        main {
-            padding: 20px;
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        footer {
-            background: #333;
+
+        h1 {
+            font-size: 4rem;
+            margin-top: 20%;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .button-container {
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
             color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This is a simple website created with HTML and CSS.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+    <h1>Welcome to Eclipse Inject</h1>
+    <div class="button-container">
+        <a href="https://discord.com" class="button">Download Now</a>
+    </div>
 </body>
 </html>
